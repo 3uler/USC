@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher_round.png",
+        "source": "/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]
