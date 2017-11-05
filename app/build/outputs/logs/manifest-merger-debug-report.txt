@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml:3:5-50
 		INJECTED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSpo
 		INJECTED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml:5:5-27:19
+ADDED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml:5:5-28:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Philipp/.android/build-cache/05285920bf041ba591cea822ed28c7fe5d3cfb4d/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/Philipp/.android/build-cache/31f6f49fd8c7fe04ead734da3e97c0ccd4d654ae/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/Philipp/.android/build-cache/adf437bec61a7c54a5a5cabf500cd7cf32e1ab47/output/AndroidManifest.xml:26:5-20
@@ -65,6 +65,10 @@ ADDED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSpo
 		ADDED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml:25:17-81
 	android:name
 		ADDED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml:24:17-63
+activity#com.example.android.urbansportsclub.CheckInActivity
+ADDED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml:27:9-62
+	android:name
+		ADDED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml:27:19-50
 uses-sdk
 INJECTED from /Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Philipp/.android/build-cache/05285920bf041ba591cea822ed28c7fe5d3cfb4d/output/AndroidManifest.xml:21:5-23:78

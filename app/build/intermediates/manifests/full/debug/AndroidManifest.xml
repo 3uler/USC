@@ -34,6 +34,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.urbansportsclub.MainActivity" />
         </activity>
+        <activity android:name="com.example.android.urbansportsclub.CheckInActivity" />
     </application>
 
 </manifest>
