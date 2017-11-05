@@ -7,6 +7,12 @@
     <!-- Strings related to Check-In-Activity-->
     <string name="location_tv">bright site</string>
     <string name="location_city_part_tv">Schöneberg</string>
+    <string name="member_id">100080036 - M\nMitgliedschaft</string>
+    <string name="default_datetime">01. November 2017 6:35 nachm.</string>
+    <string name="default_time_since">vor 0:00:29</string>
+    <string name="default_category_content">Bouldern</string>
+    <string name="category">Kategorie</string>
+    <string name="share_checkin">Teile jetzt deinen Check-in</string>
 
     <!-- Strings related to Settings -->
 

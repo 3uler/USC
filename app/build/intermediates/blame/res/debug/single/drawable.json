@@ -16,6 +16,10 @@
         "source": "/Users/Philipp/.android/build-cache/05285920bf041ba591cea822ed28c7fe5d3cfb4d/output/res/drawable/abc_tab_indicator_material.xml"
     },
     {
+        "merged": "/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/build/intermediates/res/merged/debug/drawable/image_round_bg.xml",
+        "source": "/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/res/drawable/image_round_bg.xml"
+    },
+    {
         "merged": "/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
         "source": "/Users/Philipp/.android/build-cache/05285920bf041ba591cea822ed28c7fe5d3cfb4d/output/res/drawable/notification_bg_low.xml"
     },
@@ -106,6 +110,10 @@
     {
         "merged": "/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
         "source": "/Users/Philipp/.android/build-cache/05285920bf041ba591cea822ed28c7fe5d3cfb4d/output/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/build/intermediates/res/merged/debug/drawable/ic_if_check_118698.xml",
+        "source": "/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/src/main/res/drawable/ic_if_check_118698.xml"
     },
     {
         "merged": "/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
