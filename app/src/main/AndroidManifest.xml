@@ -24,7 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.urbansportsclub.MainActivity" />
         </activity>
-        <activity android:name=".CheckInActivity"></activity>
+        <activity android:name=".CheckInActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/check_in_activity_label">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
     </application>
 
 </manifest>

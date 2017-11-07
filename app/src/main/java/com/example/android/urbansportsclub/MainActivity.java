@@ -6,13 +6,25 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button mCheckInButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mCheckInButton = (Button) findViewById(R.id.check_in_btn);
+        mCheckInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openCheckIn();
+            }
+        });
     }
 
     // inflates a menu bar
@@ -35,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void openCheckIn() {
+        Intent openCheckInIntent = new Intent(this, CheckInActivity.class);
+        startActivity(openCheckInIntent);
     }
 
 }

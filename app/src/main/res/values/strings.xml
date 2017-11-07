@@ -5,6 +5,7 @@
 
 
     <!-- Strings related to Check-In-Activity-->
+    <string name="check_in_activity_label">Check-In erfolgreich</string>
     <string name="location_tv">bright site</string>
     <string name="location_city_part_tv">Schöneberg</string>
     <string name="member_id">100080036 - M\nMitgliedschaft</string>
