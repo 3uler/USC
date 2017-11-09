@@ -12,8 +12,11 @@ public class CheckInActivity extends AppCompatActivity {
     private TextView mDateTime;
     private TextView mLocation;
     private TextView mLocationArea;
-    private Handler mHandler = new Handler();
+    private TextView mTimer;
+    private Handler mHandler;
+    private Runnable mTimeRunnable;
     private long mStartTime;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +27,26 @@ public class CheckInActivity extends AppCompatActivity {
 
         mDateTime = (TextView) findViewById(R.id.datetime_tv);
         mDateTime.setText(DateTimeStringProvider.getDateTimeString());
+        mTimer = (TextView) findViewById(R.id.timer_tv);
         mStartTime = System.currentTimeMillis();
+        mHandler = new Handler();
+
+        // Timer runnable
+        mTimeRunnable = new Runnable() {
+            @Override
+            public void run() {
+                final long start = mStartTime;
+                long currentMillis = System.currentTimeMillis() - start;
+                int seconds = (int) currentMillis / 1000;
+                int minutes = seconds / 60;
+                int hours = minutes / 60;
+                minutes = minutes % 60;
+                seconds = seconds % 60;
+                mTimer.setText(String.format("vor %1$1d:%2$02d:%3$02d", hours, minutes, seconds));
+                mHandler.postDelayed(this, 100);
+            }
+        };
+        mHandler.postDelayed(mTimeRunnable, 100);
 
     }
 }
