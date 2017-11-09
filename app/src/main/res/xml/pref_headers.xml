@@ -9,12 +9,8 @@
 
     <header
         android:fragment="com.example.android.urbansportsclub.SettingsActivity$NotificationPreferenceFragment"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/pref_header_notifications" />
+        android:icon="@drawable/ic_location_on_black_24dp"
+        android:title="@string/pref_header_locations" />
 
-    <header
-        android:fragment="com.example.android.urbansportsclub.SettingsActivity$DataSyncPreferenceFragment"
-        android:icon="@drawable/ic_sync_black_24dp"
-        android:title="@string/pref_header_data_sync" />
 
 </preference-headers>

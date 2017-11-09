@@ -8,10 +8,15 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button mCheckInButton;
+    private Button mScanButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openCheckIn();
+            }
+        });
+        mScanButton = (Button) findViewById(R.id.qr_scan_btn);
+        mScanButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                scanBarcode(view);
             }
         });
     }
@@ -53,5 +65,11 @@ public class MainActivity extends AppCompatActivity {
         Intent openCheckInIntent = new Intent(this, CheckInActivity.class);
         startActivity(openCheckInIntent);
     }
+
+    public void scanBarcode(View view) {
+        IntentIntegrator integrator = new IntentIntegrator(this);
+        integrator.initiateScan();
+    }
+
 
 }

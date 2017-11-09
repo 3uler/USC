@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_location"
+        android:key="settings_location_location"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_location" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_area"
+        android:key="settings_location_area"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_area" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_category"
+        android:key="settings_location_category"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_category" />
+
+</PreferenceScreen>
