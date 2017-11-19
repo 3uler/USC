@@ -69,4 +69,11 @@
 
     <string name="pref_title_category">Category</string>
     <string name="pref_default_category">Bouldern</string>
+
+    <!-- Strings related to barcode scanner -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="barcode_error_format">"Error reading barcode: %1$s"</string>
 </resources>

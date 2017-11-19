@@ -3,6 +3,7 @@ package com.example.android.urbansportsclub;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -10,10 +11,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
+import com.google.android.gms.common.api.CommonStatusCodes;
+import com.google.android.gms.vision.barcode.Barcode;
+import com.example.android.urbansportsclub.barcode.BarcodeCaptureActivity;
+
+//import com.google.zxing.integration.android.IntentIntegrator;
+//import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String LOG_TAG = MainActivity.class.getSimpleName();
+    private static final int BARCODE_READER_REQUEST_CODE = 1;
 
     private Button mCheckInButton;
     private Button mScanButton;
@@ -31,10 +39,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         mScanButton = (Button) findViewById(R.id.qr_scan_btn);
+//        mScanButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                scanBarcode(view);
+//            }
+//        });
+
         mScanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                scanBarcode(view);
+                Intent intent = new Intent(getApplicationContext(), BarcodeCaptureActivity.class);
+                startActivityForResult(intent, BARCODE_READER_REQUEST_CODE);
             }
         });
     }
@@ -66,10 +82,21 @@ public class MainActivity extends AppCompatActivity {
         startActivity(openCheckInIntent);
     }
 
-    public void scanBarcode(View view) {
-        IntentIntegrator integrator = new IntentIntegrator(this);
-        integrator.initiateScan();
+//    public void scanBarcode(View view) {
+//        IntentIntegrator integrator = new IntentIntegrator(this);
+//        integrator.initiateScan();
+//    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == BARCODE_READER_REQUEST_CODE) {
+            if (resultCode == CommonStatusCodes.SUCCESS) {
+                if (data != null) {
+                    //Barcode barcode = data.getParcelableExtra(BarcodeCaptureActivity.BarcodeObject);
+                    openCheckIn();
+                }
+            } else Log.e(LOG_TAG, String.format(getString(R.string.barcode_error_format),
+                    CommonStatusCodes.getStatusCodeString(resultCode)));
+        } else super.onActivityResult(requestCode, resultCode, data);
     }
-
-
 }

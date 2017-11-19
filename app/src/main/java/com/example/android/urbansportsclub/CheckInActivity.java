@@ -1,10 +1,14 @@
 package com.example.android.urbansportsclub;
 
+import android.content.SharedPreferences;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 import com.example.android.urbansportsclub.util.DateTimeStringProvider;
+
+import org.w3c.dom.Text;
 
 public class CheckInActivity extends AppCompatActivity {
 
@@ -12,6 +16,7 @@ public class CheckInActivity extends AppCompatActivity {
     private TextView mDateTime;
     private TextView mLocation;
     private TextView mLocationArea;
+    private TextView mCategory;
     private TextView mTimer;
     private Handler mHandler;
     private Runnable mTimeRunnable;
@@ -47,6 +52,17 @@ public class CheckInActivity extends AppCompatActivity {
             }
         };
         mHandler.postDelayed(mTimeRunnable, 100);
+
+        // set text views according to preferences
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mLocation = (TextView) findViewById(R.id.location_tv);
+        mLocation.setText(preferences.getString("settings_location_location",""));
+        mLocationArea = (TextView) findViewById(R.id.location_city_part_tv);
+        mLocationArea.setText(preferences.getString("settings_location_area",""));
+        mName = (TextView) findViewById(R.id.profile_name_tv);
+        mName.setText(preferences.getString("settings_general_name", ""));
+        mCategory = (TextView) findViewById(R.id.category_content_tv);
+        mCategory.setText(preferences.getString("settings_location_category",""));
 
     }
 }
