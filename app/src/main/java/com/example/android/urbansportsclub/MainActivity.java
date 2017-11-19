@@ -78,8 +78,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openCheckIn() {
-        Intent openCheckInIntent = new Intent(this, CheckInActivity.class);
-        startActivity(openCheckInIntent);
+        //Intent openCheckInIntent = new Intent(this, CheckInActivity.class);
+        //startActivity(openCheckInIntent);
+        Intent main = new Intent(this, Main2Activity.class);
+        startActivity(main);
     }
 
 //    public void scanBarcode(View view) {

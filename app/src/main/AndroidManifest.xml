@@ -3,6 +3,7 @@
     package="com.example.android.urbansportsclub">
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_usc"
@@ -10,7 +11,9 @@
         android:roundIcon="@mipmap/ic_usc"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,17 +28,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.urbansportsclub.MainActivity" />
         </activity>
-        <activity android:name=".CheckInActivity"
+        <activity
+            android:name=".CheckInActivity"
+            android:label="@string/check_in_activity_label"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            android:label="@string/check_in_activity_label">
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".barcode.BarcodeCaptureActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
