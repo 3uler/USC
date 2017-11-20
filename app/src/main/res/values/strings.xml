@@ -82,4 +82,9 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Navigation menu -->
+    <string name="nav_email">hello@urbansportsclub.com</string>
+    <string name="nav_phone">+49 30 6920 9213</string>
+    <string name="nav_impressum">Impressum</string>
 </resources>

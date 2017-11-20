@@ -9,14 +9,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
-
 import com.google.android.gms.common.api.CommonStatusCodes;
-import com.google.android.gms.vision.barcode.Barcode;
 import com.example.android.urbansportsclub.barcode.BarcodeCaptureActivity;
-
-//import com.google.zxing.integration.android.IntentIntegrator;
-//import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,13 +33,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         mScanButton = (Button) findViewById(R.id.qr_scan_btn);
-//        mScanButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                scanBarcode(view);
-//            }
-//        });
-
         mScanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,17 +71,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(main);
     }
 
-//    public void scanBarcode(View view) {
-//        IntentIntegrator integrator = new IntentIntegrator(this);
-//        integrator.initiateScan();
-//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == BARCODE_READER_REQUEST_CODE) {
             if (resultCode == CommonStatusCodes.SUCCESS) {
                 if (data != null) {
-                    //Barcode barcode = data.getParcelableExtra(BarcodeCaptureActivity.BarcodeObject);
                     openCheckIn();
                 }
             } else Log.e(LOG_TAG, String.format(getString(R.string.barcode_error_format),
