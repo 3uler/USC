@@ -8,11 +8,14 @@ import java.util.Date;
  */
 
 public class DateTimeStringProvider {
-    public static String getDateTimeString() {
-
-        SimpleDateFormat df = new SimpleDateFormat("dd. MMMM yyyy K:mm");
-        SimpleDateFormat ampm = new SimpleDateFormat("a");
+    public String getDateTimeString() {
         Date date = new Date();
+        return getDateTimeStringFromDate(date);
+    }
+
+    public String getDateTimeStringFromDate(Date date) {
+        SimpleDateFormat df = new SimpleDateFormat("dd. MMMM yyyy h:mm");
+        SimpleDateFormat ampm = new SimpleDateFormat("a");
         String dateTimeString = df.format(date);
         String ampmString = ampm.format(date);
         if(ampmString.equals("AM")) {
@@ -22,4 +25,5 @@ public class DateTimeStringProvider {
         }
         return dateTimeString;
     }
+
 }
