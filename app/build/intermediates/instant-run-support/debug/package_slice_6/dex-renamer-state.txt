@@ -1,4 +1,0 @@
-#Sat Nov 04 21:46:49 CET 2017
-base.0=/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6
-renamed.0=classes.dex
-file.0=/Users/Philipp/Documents/Uni/workspace/AndroidStudioProjects/UrbanSportsClub/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex
